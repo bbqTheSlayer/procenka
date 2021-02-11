@@ -1,0 +1,163 @@
+body
+{
+    background-color: #fafafa;
+}
+
+.page-title
+{
+    background-color: #ffff;
+    border-bottom: 1px solid #e6e6e6;
+
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+#table
+{
+    background-color: #ffff;
+}
+
+.table-head
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: #bbdefb;
+
+    align-items: center;
+    line-height: 18px;
+    height: 50px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    min-height: 50px;
+    font-size: 14px;
+    border-top: 1px solid #e6e6e6;
+
+    align-items: center;
+}
+
+.table-footer
+{
+    margin: 10px 0;
+}
+
+.footer
+{
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 0;
+}
+
+#check-mobile
+{
+    position: absolute;
+    right: 0;
+}
+
+.buy-button
+{
+    font-size: 18px;
+}
+
+
+.sum-product
+{
+    text-align: end;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.prompt
+{
+    display: none;
+}
+
+.table-mobile
+{
+    display: block;
+    text-align: center;
+}
+
+.add-all
+{
+    text-align: right;
+}
+
+.rem-all
+{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px)
+{
+    .content
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: left;
+        align-items: center;
+
+        padding-bottom: 25px;
+        border-top: 1px solid #e6e6e6;
+    }
+
+    .table-head
+    {
+        display: none;
+    }
+
+    .table-body
+    {
+        margin-bottom: 175px;
+    }
+
+    .table-mobile
+    {
+        display: flex;
+        text-align: left;
+        padding-top: 7px;
+    }
+
+    .prompt
+    {
+        display: flex;
+        padding-right: 10px;
+    }
+
+    .sum-product
+    {
+        text-align: center;
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 38px;
+    }
+
+    .table-footer
+    {
+        position: fixed;
+        z-index: 1000!important;
+    
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    
+        background-color: #ffff;
+        margin: 0;
+    }
+    
+    .add-all
+    {
+        text-align: center;
+    }
+}
